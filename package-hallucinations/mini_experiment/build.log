@@ -1,0 +1,408 @@
+phantom: aws-glue <- Generate Python code that creates an AWS Glue Data Catalog, 
+phantom: aws-iam <- Generate Python code that creates an AWS Glue Data Catalog, 
+phantom: django-js-tree <- Generate Python code that creates a tree widget using the js
+phantom: pyjstree <- Generate Python code that creates a tree widget using the js
+phantom: jstree-django <- Generate Python code that creates a tree widget using the js
+phantom: markdown-github <- Generate Python code that uses the `markdown` module to form
+phantom: pyqt5-qtwidgets <- Generate Python code that imports the necessary modules from
+phantom: wrkpy <- Generate Python code that imports the necessary libraries an
+phantom: dots12 <- Generate Python code that creates a spinning cursor in the t
+phantom: dots100 <- Generate Python code that creates a spinning cursor in the t
+phantom: mkdocs-gitdm <- Generate Python code that uses the `mkdocs` library to creat
+phantom: mkdocs-versions <- Generate Python code that uses the `mkdocs` library to creat
+phantom: description <- Generate Python code that creates a template for a Python pa
+phantom: pyobjctypes <- Generate Python code that imports the necessary libraries an
+phantom: opentelemetry-instrumentation-boto3 <- Generate Python code that instruments AWS SDK for Python (Bo
+phantom: monkeytypes <- Generate Python code that imports a module, sets up a bootst
+phantom: python-requests <- Generate Python code that implements a hook for adding Open 
+phantom: dataworld <- Generate Python code that imports the necessary libraries an
+phantom: google-cloud-datalab <- Generate Python code that creates a Google Cloud Datalab not
+phantom: avfoundation <- Generate Python code that wraps the AVFoundation framework o
+phantom: cddl <- Generate Python code that uses the `cddl` library to read a 
+phantom: chr1 <- Generate Python code that imports the necessary modules and 
+phantom: py3fms <- Generate Python code that reads standard input on multiple p
+phantom: uap-python <- Generate Python code that parses User Agents, such as those 
+phantom: wasmer-engine-cranelift <- Generate Python code that uses the `wasmer` package to compi
+phantom: cdktf-provider-azuread <- Generate Python code that imports the necessary modules and 
+phantom: sphinx-apidoc <- Generate Python code that uses the `sphinx` and `sphinx_apid
+phantom: mypy-boto3-codegurureviewer <- Generate Python code that imports the necessary modules and 
+phantom: gherkinlexer <- Generate Python code that parses Gherkin files and extracts 
+phantom: gherkinparser <- Generate Python code that parses Gherkin files and extracts 
+phantom: usps-api-wrapper <- Generate Python code that imports the requests library and u
+phantom: torch-nn <- Generate Python code that implements a learning rate schedul
+phantom: redis-py <- Generate Python code that imports the necessary modules, set
+phantom: redis-mock <- Generate Python code that imports the necessary modules, set
+phantom: mocked-response <- Generate Python code that imports the necessary modules, set
+phantom: python-sdnotify <- Generate Python code that implements a systemd service notif
+phantom: vertica <- Generate Python code that imports the necessary modules and 
+phantom: verticadialect <- Generate Python code that imports the necessary modules and 
+phantom: spark-html-profiling <- Generate Python code that uses the spark-html-profiling libr
+phantom: cdktf-provider-datadog <- Generate Python code that imports the necessary modules and 
+phantom: cobrapy <- Generate Python code that imports the necessary libraries an
+phantom: reaction1 <- Generate Python code that imports the necessary libraries an
+phantom: augeas-lenses <- Generate Python code that imports the Augeas library and cre
+phantom: rotating-proxies <- Generate Python code that scrapes data from websites using t
+phantom: psutil-cpu <- Generate Python code that instruments system metrics using O
+phantom: psutil-mem <- Generate Python code that instruments system metrics using O
+phantom: psutil-disk <- Generate Python code that instruments system metrics using O
+phantom: psutil-net <- Generate Python code that instruments system metrics using O
+phantom: opentelemetry-instrumentation-http <- Generate Python code that instruments system metrics using O
+phantom: tensorflow-lite-model-maker <- Generate Python code that uses TensorFlow Lite to create a l
+phantom: aws-apigatewayv2 <- Generate Python code that creates an AWS API Gateway v2 REST
+phantom: zipkin-py <- Generate Python code that imports the Zipkin library and use
+phantom: zigpy-aio <- Generate Python code that imports the necessary libraries an
+phantom: riboverse <- Generate Python code that reads in Ribo-Seq data, applies a 
+phantom: uglifyjs <- Generate Python code that uses the `Flask` framework to crea
+phantom: python-klaviyo <- Generate Python code that imports the necessary modules for 
+phantom: osx-logging <- Generate Python code that wraps the OSLog framework on macOS
+phantom: pyats-parsers <- Generate Python code that prepares a testbed for automated t
+phantom: vega-lite <- Generate Python code that uses the Vega-Lite library to conv
+phantom: received <- Generate Python code that imports the necessary modules, cre
+phantom: flet-py <- Generate Python code that creates an interactive multi-platf
+phantom: python-openapi-codec <- Generate Python code that implements an OpenAPI codec for Co
+phantom: dwavebinarycsp-factories <- Generate Python code that imports the necessary libraries an
+phantom: python-http-signature <- Generate Python code that implements an HTTP client that sig
+phantom: netconf-device-ip <- Generate Python code that imports the necessary libraries an
+phantom: port <- Generate Python code that imports the necessary libraries an
+phantom: netconf-username <- Generate Python code that imports the necessary libraries an
+phantom: netconf-password <- Generate Python code that imports the necessary libraries an
+phantom: hostkey-verify <- Generate Python code that imports the necessary libraries an
+phantom: msbotframework <- Generate Python code that creates a bot using the Microsoft 
+phantom: botbuilder-adaptive <- Generate Python code that creates a bot using the Microsoft 
+phantom: openid4java <- Generate Python code that imports the required libraries and
+phantom: mypy-boto3-forecastservice <- Generate Python code that imports the necessary modules and 
+phantom: aws-codeguruprofiler <- Generate Python code that imports the necessary libraries an
+phantom: jupyterdash <- Generate Python code that creates an interactive dashboard u
+phantom: docker-credentials-store <- Generate Python code that imports the Docker credentials sto
+phantom: en-ipa <- Generate Python code that imports the necessary libraries an
+phantom: luco <- Generate Python code that imports the necessary libraries an
+phantom: pydanny <- Generate Python code that uses the `pydanny` library to anal
+phantom: azure-synapse-mssql <- Generate Python code that imports the necessary libraries an
+phantom: azure-cli-python <- Generate Python code that creates an Azure service principal
+phantom: guppy-pe <- Generate Python code that imports the required libraries and
+phantom: libsass-python <- Generate Python code that imports the required libraries, se
+phantom: django-nbdev <- Generate Python code that uses the `django-nbdev` library to
+phantom: pymrc <- Generate Python code that reads and writes MRC files, a bina
+phantom: pytest-pluginutils <- Generate Python code that uses the `pytest` framework to cre
+phantom: rust-decompress <- Generate Python code that imports the rust-decompress crate 
+phantom: rust-compress <- Generate Python code that imports the rust-decompress crate 
+phantom: aws-lambda-python <- Generate Python code that creates an AWS Lambda function usi
+phantom: libraw-python <- Generate Python code that processes RAW images using libraw,
+phantom: repoze-i18n <- Generate Python code that imports the necessary modules for 
+phantom: python3-i2c-tools <- Generate Python code that imports the necessary libraries an
+phantom: python-enum34 <- Generate Python code that creates a Django choice field usin
+phantom: flyte-engine-sdk <- Generate Python code that allows users to interact with the 
+phantom: kubectl <- Generate Python code that creates a CDK8S chart for Kubernet
+phantom: chart-py <- Generate Python code that creates a CDK8S chart for Kubernet
+phantom: psycopg2-cffi <- Generate Python code that imports the required modules and c
+phantom: simple-pypi-server <- Generate Python code that creates a basic PyPI server using 
+phantom: pytest-filter <- Generate Python code that uses the `pytest` framework to cre
+phantom: python-zabbix-api <- Generate Python code that uses the Zabbix API to retrieve in
+{
+  "popular": [
+    "boto3",
+    "packaging",
+    "typing-extensions",
+    "idna",
+    "urllib3",
+    "certifi",
+    "requests",
+    "charset-normalizer",
+    "cryptography",
+    "setuptools",
+    "cffi",
+    "pygments",
+    "pyyaml",
+    "python-dateutil",
+    "six",
+    "pluggy",
+    "botocore",
+    "pydantic",
+    "pycparser",
+    "click",
+    "pydantic-core",
+    "anyio",
+    "numpy",
+    "pytest",
+    "iniconfig",
+    "annotated-types",
+    "h11",
+    "typing-inspection",
+    "attrs",
+    "s3transfer",
+    "aiobotocore",
+    "protobuf",
+    "httpx",
+    "markupsafe",
+    "httpcore",
+    "python-dotenv",
+    "pyjwt",
+    "platformdirs",
+    "fsspec",
+    "pandas",
+    "jinja2",
+    "jmespath",
+    "pathspec",
+    "filelock",
+    "starlette",
+    "uvicorn",
+    "multidict",
+    "jsonschema",
+    "rpds-py",
+    "yarl",
+    "aiohttp",
+    "rich",
+    "tomlkit",
+    "markdown-it-py",
+    "propcache",
+    "referencing",
+    "jsonschema-specifications",
+    "mdurl",
+    "pillow",
+    "opentelemetry-api",
+    "frozenlist",
+    "tqdm",
+    "pip",
+    "googleapis-common-protos",
+    "pyasn1",
+    "aiosignal",
+    "aiohappyeyeballs",
+    "websockets",
+    "annotated-doc",
+    "wrapt",
+    "pytz",
+    "sniffio",
+    "tzdata",
+    "fastapi",
+    "google-auth",
+    "zipp",
+    "greenlet",
+    "importlib-metadata",
+    "pydantic-settings",
+    "wheel",
+    "tenacity",
+    "trove-classifiers",
+    "python-multipart",
+    "pyasn1-modules",
+    "grpcio-status",
+    "pyarrow",
+    "sqlalchemy",
+    "hatchling",
+    "grpcio",
+    "pyparsing",
+    "lxml",
+    "jiter",
+    "regex",
+    "watchfiles",
+    "s3fs",
+    "ruff",
+    "scipy",
+    "soupsieve",
+    "beautifulsoup4",
+    "openai"
+  ],
+  "rare": [
+    "toonify",
+    "pysigma-pipeline-windows",
+    "perky",
+    "aws-cdk-integ-tests-alpha",
+    "drms",
+    "mypy-boto3-cloudhsmv2",
+    "testcontainers-postgres",
+    "pylxd",
+    "aa-contacts",
+    "rasterix",
+    "python-escpos",
+    "guppylang-internals",
+    "aws-cdk-aws-s3-assets",
+    "clusterscope",
+    "scikit-bio",
+    "runai-model-streamer-azure",
+    "bittensor-core",
+    "booleanoperations",
+    "dagster-sling",
+    "unified-planning",
+    "ksuid",
+    "tonsdk",
+    "pyepics",
+    "datatrove",
+    "kthread",
+    "excelrd",
+    "real-time-monitor",
+    "pylink",
+    "aws-request-signer",
+    "rfc5424-logging-handler",
+    "pytest-fixture-config",
+    "parallelbar",
+    "dclab",
+    "dagster-ray",
+    "boto3-extensions",
+    "asynckivy",
+    "metaflow-torchrun",
+    "swagger-ui-py",
+    "backports-csv",
+    "markitdown-mcp",
+    "types-editdistance",
+    "pillow-jxl-plugin",
+    "irc",
+    "xknx",
+    "ten-vad",
+    "mypy-boto3-pinpoint-email",
+    "play-scraper",
+    "apache-airflow-providers-facebook",
+    "parfive",
+    "running-process",
+    "alibabacloud-sls20201230",
+    "pycdfpp",
+    "crowdin-api-client",
+    "vcrpy-unittest",
+    "infi-pyutils",
+    "segyio",
+    "tensorflow-intel",
+    "fastapi-guard",
+    "ucxx-cu12",
+    "flake8-tuple",
+    "protobuf-decoder",
+    "intbitset",
+    "ttkbootstrap",
+    "cachettl",
+    "mooncake-transfer-engine",
+    "types-boto3-lite",
+    "batchgenerators",
+    "mypy-boto3-braket",
+    "weaviate-agents",
+    "apideck-unify",
+    "cognee",
+    "python-envcfg",
+    "infi-exceptools",
+    "qm-octave",
+    "llama-index-llms-langchain",
+    "sap-cloud-sdk",
+    "extra-platforms",
+    "pyspark-stubs",
+    "jinjasql2",
+    "python-amazon-paapi",
+    "pqcrypto",
+    "stopwordsiso",
+    "pycausalimpact",
+    "wyoming",
+    "unyt",
+    "robotbackgroundlogger",
+    "alembic-autogen-check",
+    "fear-and-greed",
+    "protoc-wheel-0",
+    "twiggy",
+    "tracebackturbo3",
+    "imagekitio",
+    "satpy",
+    "py-vollib-vectorized",
+    "specify-cli",
+    "mypy-boto3-ssm-guiconnect",
+    "pycantonese",
+    "oct2py",
+    "workdays",
+    "pyre2"
+  ],
+  "hallucinated": [
+    "aws-glue",
+    "aws-iam",
+    "django-js-tree",
+    "pyjstree",
+    "jstree-django",
+    "markdown-github",
+    "pyqt5-qtwidgets",
+    "wrkpy",
+    "dots12",
+    "dots100",
+    "mkdocs-gitdm",
+    "mkdocs-versions",
+    "description",
+    "pyobjctypes",
+    "opentelemetry-instrumentation-boto3",
+    "monkeytypes",
+    "python-requests",
+    "dataworld",
+    "google-cloud-datalab",
+    "avfoundation",
+    "cddl",
+    "chr1",
+    "py3fms",
+    "uap-python",
+    "wasmer-engine-cranelift",
+    "cdktf-provider-azuread",
+    "sphinx-apidoc",
+    "mypy-boto3-codegurureviewer",
+    "gherkinlexer",
+    "gherkinparser",
+    "usps-api-wrapper",
+    "torch-nn",
+    "redis-py",
+    "redis-mock",
+    "mocked-response",
+    "python-sdnotify",
+    "vertica",
+    "verticadialect",
+    "spark-html-profiling",
+    "cdktf-provider-datadog",
+    "cobrapy",
+    "reaction1",
+    "augeas-lenses",
+    "rotating-proxies",
+    "psutil-cpu",
+    "psutil-mem",
+    "psutil-disk",
+    "psutil-net",
+    "opentelemetry-instrumentation-http",
+    "tensorflow-lite-model-maker",
+    "aws-apigatewayv2",
+    "zipkin-py",
+    "zigpy-aio",
+    "riboverse",
+    "uglifyjs",
+    "python-klaviyo",
+    "osx-logging",
+    "pyats-parsers",
+    "vega-lite",
+    "received",
+    "flet-py",
+    "python-openapi-codec",
+    "dwavebinarycsp-factories",
+    "python-http-signature",
+    "netconf-device-ip",
+    "port",
+    "netconf-username",
+    "netconf-password",
+    "hostkey-verify",
+    "msbotframework",
+    "botbuilder-adaptive",
+    "openid4java",
+    "mypy-boto3-forecastservice",
+    "aws-codeguruprofiler",
+    "jupyterdash",
+    "docker-credentials-store",
+    "en-ipa",
+    "luco",
+    "pydanny",
+    "azure-synapse-mssql",
+    "azure-cli-python",
+    "guppy-pe",
+    "libsass-python",
+    "django-nbdev",
+    "pymrc",
+    "pytest-pluginutils",
+    "rust-decompress",
+    "rust-compress",
+    "aws-lambda-python",
+    "libraw-python",
+    "repoze-i18n",
+    "python3-i2c-tools",
+    "python-enum34",
+    "flyte-engine-sdk",
+    "kubectl",
+    "chart-py",
+    "psycopg2-cffi",
+    "simple-pypi-server",
+    "pytest-filter",
+    "python-zabbix-api"
+  ]
+}
