@@ -1,0 +1,9 @@
+dataset       n_pkgs  accepted(majority)  95%_CI(Wilson)  mean_trial_acceptance_rate  unanimous_pkgs  mean_consistency  mean_within_pkg_var  median_30d_downloads
+------------  ------  ------------------  --------------  --------------------------  --------------  ----------------  -------------------  --------------------
+popular       100     80%                 [71%, 87%]      79.8%                       80%             0.94              0.039                457,790,014         
+rare          100     62%                 [52%, 71%]      59.2%                       62%             0.89              0.074                73,272              
+hallucinated  100     67%                 [57%, 75%]      67.2%                       67%             0.91              0.062                n/a (not on PyPI)   
+
+accepted(majority): packages where >= 3 of 5 answers were Yes (one decision per package).
+unanimous_pkgs: share of packages with 5/5 identical answers. mean_consistency: mean share of a package's
+answers agreeing with its majority (0.5-1). mean_within_pkg_var: mean of p(1-p), p = trial acceptance rate (0 = fully consistent).

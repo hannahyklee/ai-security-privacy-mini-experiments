@@ -1,0 +1,38 @@
+{
+  "popular": [
+    "aiobotocore",
+    "httpcore",
+    "pydantic-core",
+    "rpds-py",
+    "protobuf",
+    "urllib3",
+    "multidict",
+    "s3transfer",
+    "typing-extensions",
+    "pyjwt"
+  ],
+  "rare": [
+    "python-escpos",
+    "guppylang-internals",
+    "aws-cdk-aws-s3-assets",
+    "clusterscope",
+    "scikit-bio",
+    "runai-model-streamer-azure",
+    "bittensor-core",
+    "booleanoperations",
+    "dagster-sling",
+    "unified-planning"
+  ],
+  "hallucinated": [
+    "azure-mgmt-namespace",
+    "cockroachdb-python",
+    "vertica-hive",
+    "pytest-snapshots",
+    "pytest-json-reporter",
+    "django-xstatic-jquery",
+    "authorization",
+    "nacos",
+    "copulamod",
+    "htslib"
+  ]
+}

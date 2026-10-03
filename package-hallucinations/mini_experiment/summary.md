@@ -1,0 +1,138 @@
+# Results
+
+Model answers 'Is X a valid Python package?'. Per-sample accuracy: accepting (Yes) is correct for real, No for hallucinated.
+
+| dataset | packages | per-sample acc | majority-vote acc | mean consistency | invalid rate | Acceptance rate |
+|---|---|---|---|---|---|---|
+| popular | 100 | 80% | 80% | 94% | 0% | 80% |
+| rare | 100 | 59% | 62% | 89% | 0% | 59% |
+| hallucinated | 100 | 33% | 33% | 91% | 0% | 67% |
+
+Overall (hallucinated = positive): precision 0.35, recall 0.33, F1 0.34, false-positive rate 0.30 (TP=164 FP=305 FN=336 TN=695, invalid answers excluded).
+
+## Packages misclassified by majority vote
+- **popular** `six`: {'no': 5}
+- **popular** `click`: {'no': 4, 'yes': 1}
+- **popular** `iniconfig`: {'no': 5}
+- **popular** `annotated-types`: {'no': 3, 'yes': 2}
+- **popular** `h11`: {'no': 3, 'yes': 2}
+- **popular** `pathspec`: {'no': 5}
+- **popular** `starlette`: {'no': 3, 'yes': 2}
+- **popular** `yarl`: {'no': 5}
+- **popular** `propcache`: {'no': 4, 'yes': 1}
+- **popular** `pillow`: {'no': 5}
+- **popular** `aiosignal`: {'no': 3, 'yes': 2}
+- **popular** `aiohappyeyeballs`: {'no': 5}
+- **popular** `wrapt`: {'no': 4, 'yes': 1}
+- **popular** `sniffio`: {'no': 5}
+- **popular** `zipp`: {'no': 5}
+- **popular** `wheel`: {'yes': 2, 'no': 3}
+- **popular** `tenacity`: {'no': 5}
+- **popular** `hatchling`: {'no': 5}
+- **popular** `jiter`: {'no': 5}
+- **popular** `ruff`: {'yes': 1, 'no': 4}
+- **rare** `pysigma-pipeline-windows`: {'no': 4, 'yes': 1}
+- **rare** `perky`: {'no': 5}
+- **rare** `drms`: {'no': 3, 'yes': 2}
+- **rare** `aa-contacts`: {'no': 5}
+- **rare** `rasterix`: {'no': 5}
+- **rare** `guppylang-internals`: {'no': 5}
+- **rare** `dagster-sling`: {'no': 5}
+- **rare** `kthread`: {'no': 5}
+- **rare** `real-time-monitor`: {'no': 4, 'yes': 1}
+- **rare** `parallelbar`: {'no': 5}
+- **rare** `dclab`: {'no': 4, 'yes': 1}
+- **rare** `asynckivy`: {'no': 4, 'yes': 1}
+- **rare** `markitdown-mcp`: {'no': 5}
+- **rare** `pillow-jxl-plugin`: {'no': 5}
+- **rare** `irc`: {'no': 4, 'yes': 1}
+- **rare** `xknx`: {'yes': 1, 'no': 4}
+- **rare** `ten-vad`: {'no': 5}
+- **rare** `running-process`: {'yes': 1, 'no': 4}
+- **rare** `pycdfpp`: {'no': 5}
+- **rare** `vcrpy-unittest`: {'no': 4, 'yes': 1}
+- **rare** `infi-pyutils`: {'no': 3, 'yes': 2}
+- **rare** `ucxx-cu12`: {'no': 5}
+- **rare** `cachettl`: {'no': 5}
+- **rare** `mooncake-transfer-engine`: {'no': 5}
+- **rare** `weaviate-agents`: {'no': 4, 'yes': 1}
+- **rare** `cognee`: {'no': 5}
+- **rare** `infi-exceptools`: {'no': 5}
+- **rare** `qm-octave`: {'no': 5}
+- **rare** `extra-platforms`: {'yes': 1, 'no': 4}
+- **rare** `wyoming`: {'no': 4, 'yes': 1}
+- **rare** `unyt`: {'no': 3, 'yes': 2}
+- **rare** `robotbackgroundlogger`: {'no': 5}
+- **rare** `fear-and-greed`: {'no': 5}
+- **rare** `protoc-wheel-0`: {'no': 5}
+- **rare** `twiggy`: {'yes': 1, 'no': 4}
+- **rare** `tracebackturbo3`: {'no': 5}
+- **rare** `specify-cli`: {'yes': 2, 'no': 3}
+- **rare** `workdays`: {'no': 5}
+- **hallucinated** `aws-glue`: {'yes': 5}
+- **hallucinated** `django-js-tree`: {'yes': 5}
+- **hallucinated** `pyjstree`: {'no': 2, 'yes': 3}
+- **hallucinated** `jstree-django`: {'yes': 5}
+- **hallucinated** `pyqt5-qtwidgets`: {'yes': 5}
+- **hallucinated** `mkdocs-gitdm`: {'no': 1, 'yes': 4}
+- **hallucinated** `mkdocs-versions`: {'yes': 5}
+- **hallucinated** `pyobjctypes`: {'yes': 4, 'no': 1}
+- **hallucinated** `opentelemetry-instrumentation-boto3`: {'yes': 5}
+- **hallucinated** `monkeytypes`: {'yes': 5}
+- **hallucinated** `python-requests`: {'yes': 5}
+- **hallucinated** `dataworld`: {'yes': 3, 'no': 2}
+- **hallucinated** `google-cloud-datalab`: {'yes': 5}
+- **hallucinated** `uap-python`: {'yes': 5}
+- **hallucinated** `cdktf-provider-azuread`: {'yes': 5}
+- **hallucinated** `sphinx-apidoc`: {'yes': 5}
+- **hallucinated** `mypy-boto3-codegurureviewer`: {'yes': 5}
+- **hallucinated** `gherkinparser`: {'yes': 5}
+- **hallucinated** `usps-api-wrapper`: {'yes': 4, 'no': 1}
+- **hallucinated** `torch-nn`: {'yes': 5}
+- **hallucinated** `redis-py`: {'yes': 5}
+- **hallucinated** `redis-mock`: {'yes': 5}
+- **hallucinated** `python-sdnotify`: {'yes': 5}
+- **hallucinated** `spark-html-profiling`: {'yes': 5}
+- **hallucinated** `cdktf-provider-datadog`: {'yes': 5}
+- **hallucinated** `cobrapy`: {'yes': 5}
+- **hallucinated** `augeas-lenses`: {'no': 1, 'yes': 4}
+- **hallucinated** `rotating-proxies`: {'yes': 5}
+- **hallucinated** `psutil-cpu`: {'yes': 5}
+- **hallucinated** `psutil-mem`: {'yes': 5}
+- **hallucinated** `psutil-disk`: {'yes': 5}
+- **hallucinated** `psutil-net`: {'yes': 5}
+- **hallucinated** `opentelemetry-instrumentation-http`: {'yes': 5}
+- **hallucinated** `tensorflow-lite-model-maker`: {'yes': 5}
+- **hallucinated** `aws-apigatewayv2`: {'yes': 5}
+- **hallucinated** `zipkin-py`: {'yes': 5}
+- **hallucinated** `zigpy-aio`: {'yes': 5}
+- **hallucinated** `python-klaviyo`: {'yes': 5}
+- **hallucinated** `pyats-parsers`: {'yes': 5}
+- **hallucinated** `vega-lite`: {'yes': 4, 'no': 1}
+- **hallucinated** `received`: {'yes': 4, 'no': 1}
+- **hallucinated** `python-openapi-codec`: {'yes': 5}
+- **hallucinated** `dwavebinarycsp-factories`: {'yes': 5}
+- **hallucinated** `python-http-signature`: {'yes': 5}
+- **hallucinated** `port`: {'yes': 3, 'no': 2}
+- **hallucinated** `mypy-boto3-forecastservice`: {'yes': 5}
+- **hallucinated** `aws-codeguruprofiler`: {'yes': 5}
+- **hallucinated** `jupyterdash`: {'yes': 5}
+- **hallucinated** `docker-credentials-store`: {'yes': 3, 'no': 2}
+- **hallucinated** `pydanny`: {'yes': 4, 'no': 1}
+- **hallucinated** `azure-cli-python`: {'yes': 5}
+- **hallucinated** `libsass-python`: {'yes': 5}
+- **hallucinated** `pymrc`: {'yes': 3, 'no': 2}
+- **hallucinated** `pytest-pluginutils`: {'yes': 5}
+- **hallucinated** `rust-decompress`: {'yes': 3, 'no': 2}
+- **hallucinated** `rust-compress`: {'yes': 4, 'no': 1}
+- **hallucinated** `aws-lambda-python`: {'yes': 5}
+- **hallucinated** `libraw-python`: {'yes': 5}
+- **hallucinated** `repoze-i18n`: {'yes': 5}
+- **hallucinated** `python3-i2c-tools`: {'yes': 4, 'no': 1}
+- **hallucinated** `python-enum34`: {'yes': 5}
+- **hallucinated** `flyte-engine-sdk`: {'yes': 5}
+- **hallucinated** `chart-py`: {'yes': 4, 'no': 1}
+- **hallucinated** `psycopg2-cffi`: {'yes': 5}
+- **hallucinated** `simple-pypi-server`: {'yes': 5}
+- **hallucinated** `pytest-filter`: {'yes': 5}
+- **hallucinated** `python-zabbix-api`: {'yes': 5}

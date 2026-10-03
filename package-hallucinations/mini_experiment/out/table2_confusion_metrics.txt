@@ -1,0 +1,9 @@
+Per-sample confusion (positive = hallucinated, predicted positive = model said No)
+                       pred_No(fake)  pred_Yes(real)
+---------------------  -------------  --------------
+actually hallucinated  164            336           
+actually real          305            695           
+
+precision 0.350  recall 0.328  F1 0.338  FPR 0.305  accuracy 0.573
+
+AUC (acceptance rate separates real from hallucinated): all real 0.516 | popular vs hallucinated 0.592 | rare vs hallucinated 0.441

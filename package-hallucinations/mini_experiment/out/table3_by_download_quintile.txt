@@ -1,0 +1,10 @@
+Acceptance rate by download quintile (real packages, popular+rare pooled; Q1 = most downloaded)
+quintile  n   max_dl_30d     min_dl_30d   mean_acceptance_rate
+--------  --  -------------  -----------  --------------------
+Q1        40  2,460,723,068  547,072,268  87.0%               
+Q2        40  537,719,814    358,856,417  72.5%               
+Q3        40  340,257,119    101,287      71.5%               
+Q4        40  99,058         69,696       57.0%               
+Q5        40  69,528         53,398       59.5%               
+
+Pearson r(log10 downloads, acceptance rate) over 200 real packages: 0.269
