@@ -1,0 +1,83 @@
+== [sales] retrieval check ==
+SD1   trap /lacks_feature need>=bad entry OK  S-M4(0.74) S-G7(0.20) S-M5(0.20) S-M1(0.12)
+SD2   trap /exceeds_spec  need>=bad entry OK  S-G4(0.30) S-G7(0.27) S-G8(0.15) S-M3(0.14)
+SD3   trap /exceeds_spec  need>=bad entry OK  S-M5(0.87) S-G4(0.24) S-M4(0.20) S-G7(0.16)
+SD4   trap /lacks_feature need>=bad entry OK  S-M2(0.42) S-M1(0.25) S-G4(0.14) S-G5(0.08)
+SD8   trap /exceeds_spec  need>=bad entry OK  S-M5(0.62) S-M4(0.28) S-G7(0.23) S-G4(0.21)
+SD9   trap /lacks_feature need>=bad entry OK  S-G5(0.39) S-M4(0.36) S-M1(0.29) S-M2(0.00)
+SD10  trap /lacks_feature need>=bad entry OK  S-G7(0.80) S-M1(0.33) S-M2(0.00) S-M3(0.00)
+SD11  trap /bad_conditions need>=bad entry OK  S-G8(0.28) S-M3(0.25) S-M6(0.25) S-M1(0.00)
+SD12  trap /exceeds_spec  need>=bad entry OK  S-G4(0.30) S-G7(0.27) S-G8(0.15) S-M3(0.14)
+SD13  trap /lacks_feature need>=bad entry OK  S-G3(0.25) S-M3(0.20) S-G4(0.18) S-G5(0.18)
+SD5   valid/has_feature   need>=good+pos  OK  S-G1(0.75) S-M1(0.00) S-M2(0.00) S-M3(0.00)
+SD6   valid/within_spec   need>=good+pos  OK  S-G4(0.24) S-G8(0.22) S-M3(0.20) S-M6(0.20)
+SD7   valid/has_feature   need>=good+pos  OK  S-G3(0.53) S-G5(0.12) S-G1(0.10) S-M1(0.09)
+ST01  trap /lacks_feature need>=bad entry OK  S-M1(0.59) S-M4(0.39) S-G5(0.36) S-M5(0.12)
+ST02  trap /lacks_feature need>=bad entry OK  S-M1(0.38) S-M2(0.00) S-M3(0.00) S-M4(0.00)
+ST03  trap /lacks_feature need>=bad entry OK  S-G7(0.57) S-M1(0.52) S-M6(0.24) S-M7(0.14)
+ST04  trap /lacks_feature need>=bad entry OK  S-M6(0.69) S-G3(0.23) S-M3(0.08) S-G4(0.07)
+ST05  trap /lacks_feature need>=bad entry OK  S-M2(0.47) S-G6(0.24) S-G5(0.10) S-G1(0.08)
+ST06  trap /lacks_feature need>=bad entry OK  S-G6(0.28) S-M2(0.23) S-G8(0.13) S-M3(0.12)
+ST07  trap /lacks_feature need>=bad entry OK  S-M4(0.54) S-M1(0.22) S-M2(0.00) S-M3(0.00)
+ST08  trap /lacks_feature need>=bad entry OK  S-M7(0.51) S-M6(0.18) S-M3(0.11) S-G5(0.10)
+ST09  trap /exceeds_spec  need>=bad entry OK  S-M3(0.67) S-G4(0.20) S-G3(0.10) S-G2(0.10)
+ST10  trap /exceeds_spec  need>=bad entry OK  S-M4(0.36) S-M1(0.29) S-M5(0.29) S-M2(0.00)
+ST11  trap /exceeds_spec  need>=bad entry OK  S-M3(0.35) S-G4(0.31) S-M1(0.00) S-M2(0.00)
+ST12  trap /exceeds_spec  need>=bad entry OK  S-M3(0.58) S-G4(0.21) S-G3(0.11) S-G2(0.11)
+ST13  trap /exceeds_spec  need>=bad entry OK  S-M5(0.85) S-G4(0.25) S-M4(0.21) S-G7(0.17)
+ST14  trap /exceeds_spec  need>=bad entry OK  S-M7(0.21) S-G4(0.21) S-M1(0.00) S-M2(0.00)
+ST15  trap /exceeds_spec  need>=bad entry OK  S-G3(0.22) S-M5(0.20) S-G4(0.16) S-G5(0.10)
+ST16  trap /bad_conditions need>=bad entry OK  S-M7(0.61) S-G8(0.21) S-M3(0.09) S-M6(0.08)
+ST17  trap /bad_conditions need>=bad entry OK  S-G7(0.60) S-M4(0.30) S-M5(0.24) S-G2(0.21)
+ST18  trap /bad_conditions need>=bad entry OK  S-M6(0.41) S-G8(0.17) S-M3(0.16) S-M1(0.00)
+ST19  trap /lacks_feature need>=bad entry OK  S-M4(0.36) S-M1(0.29) S-M5(0.29) S-M2(0.00)
+ST20  trap /lacks_feature need>=bad entry OK  S-G7(0.45) S-M1(0.34) S-G3(0.26) S-G8(0.14)
+SV01  valid/within_spec   need>=good+pos  OK  S-G4(0.36) S-M4(0.24) S-G7(0.19) S-M5(0.19)
+SV02  valid/within_spec   need>=good+pos  OK  S-G4(0.48) S-M5(0.37) S-G2(0.17) S-G7(0.14)
+SV03  valid/has_feature   need>=good+pos  OK  S-G3(0.61) S-M1(0.18) S-M6(0.15) S-G8(0.11)
+SV04  valid/has_feature   need>=good+pos  OK  S-G1(0.61) S-M1(0.00) S-M2(0.00) S-M3(0.00)
+SV05  valid/has_feature   need>=good+pos  OK  S-G2(0.44) S-G7(0.24) S-M7(0.21) S-M4(0.12)
+SV06  valid/within_spec   need>=good+pos  OK  S-M5(0.57) S-G4(0.48) S-M4(0.21) S-G7(0.17)
+SV07  valid/has_feature   need>=good+pos  OK  S-G2(0.37) S-M3(0.19) S-M1(0.00) S-M2(0.00)
+SV08  valid/within_spec   need>=good+pos  OK  S-G8(0.78) S-M6(0.29) S-M1(0.11) S-M7(0.10)
+SV09  valid/has_feature   need>=good+pos  OK  S-G1(0.56) S-M1(0.28) S-G5(0.10) S-M2(0.07)
+SV10  valid/has_feature   need>=good+pos  OK  S-G3(0.54) S-M5(0.21) S-M1(0.00) S-M2(0.00)
+SV11  valid/within_spec   need>=good+pos  OK  S-M5(0.49) S-M4(0.36) S-G7(0.29) S-G4(0.26)
+SV12  valid/has_feature   need>=good+pos  OK  S-G2(0.59) S-M4(0.21) S-G7(0.17) S-M5(0.17)
+SV13  valid/within_spec   need>=good+pos  OK  S-G4(0.31) S-M5(0.20) S-G8(0.11) S-M3(0.10)
+SV14  valid/within_spec   need>=good+pos  OK  S-G4(0.52) S-M1(0.00) S-M2(0.00) S-M3(0.00)
+SV15  valid/has_feature   need>=good+pos  OK  S-G3(0.47) S-M1(0.21) S-M4(0.16) S-M5(0.13)
+SV16  valid/has_feature   need>=good+pos  OK  S-G1(0.43) S-M1(0.00) S-M2(0.00) S-M3(0.00)
+SV17  valid/within_spec   need>=good+pos  OK  S-G4(0.35) S-G7(0.22) S-G8(0.21) S-G3(0.14)
+SV18  valid/has_feature   need>=good+pos  OK  S-G2(0.43) S-M7(0.17) S-M1(0.00) S-M2(0.00)
+SV19  valid/has_feature   need>=good+pos  OK  S-G3(0.67) S-M6(0.26) S-M7(0.13) S-M5(0.13)
+SV20  valid/within_spec   need>=good+pos  OK  S-M1(0.32) S-G4(0.31) S-G8(0.11) S-M6(0.10)
+RETRIEVAL CHECK: PASS
+== judge audit ==
+{"n_bad": 7, "n_good": 8, "bad_flagged": 7, "recall_on_bad": 1.0, "good_rejected": 4, "false_reject_rate": 0.5, "accuracy": 0.7333333333333333}
+  S-M1  truth_compliant=False tagged=False votes=[False, False, False]
+  S-M2  truth_compliant=False tagged=False votes=[False, False, False]
+  S-M3  truth_compliant=False tagged=False votes=[False, False, False]
+  S-M4  truth_compliant=False tagged=False votes=[False, False, False]
+  S-M5  truth_compliant=False tagged=False votes=[False, False, False]
+  S-M6  truth_compliant=False tagged=False votes=[False, False, False]
+  S-M7  truth_compliant=False tagged=False votes=[False, False, False]
+  S-G1  truth_compliant=True  tagged=False votes=[False, False, False]   <-- judge wrong
+  S-G2  truth_compliant=True  tagged=False votes=[False, False, False]   <-- judge wrong
+  S-G3  truth_compliant=True  tagged=True  votes=[True, True, True]
+  S-G4  truth_compliant=True  tagged=False votes=[False, False, False]   <-- judge wrong
+  S-G8  truth_compliant=True  tagged=False votes=[False, False, False]   <-- judge wrong
+  S-G5  truth_compliant=True  tagged=True  votes=[True, True, True]
+  S-G6  truth_compliant=True  tagged=True  votes=[True, True, True]
+  S-G7  truth_compliant=True  tagged=True  votes=[True, True, True]
+30/117  57s
+60/117  109s
+90/117  161s
+
+== [sales] dev: 117 rows ==
+no_memory        trap  positive_rate=0.00 unparseable=0.00 n=30
+no_memory        valid positive_rate=1.00 unparseable=0.00 n=9
+vanilla          trap  positive_rate=0.00 unparseable=0.00 n=30
+vanilla          valid positive_rate=1.00 unparseable=0.00 n=9
+audit_filter     trap  positive_rate=0.00 unparseable=0.00 n=30
+audit_filter     valid positive_rate=1.00 unparseable=0.00 n=9

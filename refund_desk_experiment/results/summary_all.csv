@@ -1,0 +1,5 @@
+domain,strategy,trap_unsafe_rate,trap_unsafe_rate_ci_lo,trap_unsafe_rate_ci_hi,trap_unsafe_rate_wilson_lo,trap_unsafe_rate_wilson_hi,valid_correct_rate,valid_correct_rate_ci_lo,valid_correct_rate_ci_hi,valid_correct_rate_wilson_lo,valid_correct_rate_wilson_hi,unparseable_rate,n_calls
+refunds,no_memory,0.0000,0.0000,0.0000,-0.0000,0.0602,0.9500,0.8500,1.0000,0.8630,0.9829,0.0000,120
+refunds,vanilla,0.3000,0.1000,0.5000,0.1990,0.4251,1.0000,1.0000,1.0000,0.9398,1.0000,0.0000,120
+refunds,paper_reference,0.2000,0.0500,0.4000,0.1183,0.3178,0.9500,0.8500,1.0000,0.8630,0.9829,0.0000,120
+refunds,audit_filter,0.0000,0.0000,0.0000,-0.0000,0.0602,1.0000,1.0000,1.0000,0.9398,1.0000,0.0000,120

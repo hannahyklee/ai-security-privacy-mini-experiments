@@ -1,0 +1,5 @@
+domain,n_bad,n_good,bad_flagged,recall_on_bad,good_rejected,false_reject_rate,accuracy,group,n,tagged_non_compliant
+refunds,10,10,10,1.0000,3,0.3000,0.8500,,,
+refunds,,,,,,,,honest,4,3
+refunds,,,,,,,,misleading,10,10
+refunds,,,,,,,,valid,6,0

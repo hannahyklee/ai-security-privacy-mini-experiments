@@ -1,0 +1,17 @@
+domain,strategy,subtype,unsafe_rate,n
+refunds,no_memory,late,0.0000,18
+refunds,no_memory,policy_only,0.0000,12
+refunds,no_memory,safety,0.0000,15
+refunds,no_memory,used,0.0000,15
+refunds,vanilla,late,0.1667,18
+refunds,vanilla,policy_only,0.0000,12
+refunds,vanilla,safety,0.8000,15
+refunds,vanilla,used,0.2000,15
+refunds,paper_reference,late,0.1667,18
+refunds,paper_reference,policy_only,0.0000,12
+refunds,paper_reference,safety,0.6000,15
+refunds,paper_reference,used,0.0000,15
+refunds,audit_filter,late,0.0000,18
+refunds,audit_filter,policy_only,0.0000,12
+refunds,audit_filter,safety,0.0000,15
+refunds,audit_filter,used,0.0000,15
