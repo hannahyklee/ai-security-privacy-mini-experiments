@@ -1,0 +1,6 @@
+"pandas",
+"numpy",
+"transformers",
+"tqdm",
+"scikit-learn",
+"scipy"

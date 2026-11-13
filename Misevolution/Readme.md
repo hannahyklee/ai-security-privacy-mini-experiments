@@ -1,0 +1,161 @@
+![cover](figures/misevolution_github_cover.png)
+
+<div align="center">
+
+#  Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents （ICLR 2026）
+
+</div>
+
+
+<div align="center">
+
+[![Paper](https://img.shields.io/badge/Arxiv-misevolution?style=for-the-badge&logo=arxiv&logoColor=white&color=%23B22222)](https://arxiv.org/abs/2509.26354) [![Github](https://img.shields.io/badge/Github-misevolution?style=for-the-badge&logo=github&logoColor=white&color=black)](https://github.com/ShaoShuai0605/Misevolution) [![Huggingface](https://img.shields.io/badge/dataset-misevolution?style=for-the-badge&logo=huggingface&logoColor=black&color=%23FFD21F)]()
+
+</div>
+
+---
+
+# 📚 Overview
+- 📢 [News](#news)  
+- 📖 [Introduction](#introduction)  
+- ✨ [Getting Started](#getting-started)  
+- 🔧 [Usage](#usage)   
+- 🙏 [Citation](#citation)  
+- 🌻 [Acknowledgement](#acknowledgement)  
+<!-- - 📈 [Star History](#star-history) -->
+
+
+---
+
+
+
+# 📢News
+- **[2025/01/29]** Our paper is accepted by ICLR! 🎉🎉 
+- **[2025/10/06]** Our paper is available on [Huggingface](https://huggingface.co/papers/2509.26354). If you enjoy our work, we warmly invite you to **upvote** it on Huggingface!
+- **[2025/09/30]** Our paper is available on [arXiv](https://arxiv.org/pdf/2509.26354). 
+
+
+
+---
+# 📖Introduction
+
+
+**Self-evolving agents**, systems that can improve themselves with minimal human input, have become an exciting and emerging area of research. 
+However, self-evolution also introduces novel risks that existing safety research often misses. In this work, we study the case where *an agent's self-evolution deviates in unintended ways, leading to undesirable or even harmful outcomes*. We refer to this as **Misevolution**.
+To provide a systematic investigation, we evaluate misevolution along four key evolutionary pathways: the agent's model, memory, tool, and workflow. 
+Our empirical findings reveal that misevolution is a widespread risk, even for agents built on top models like Gemini-2.5-Pro.
+Different emergent risks are observed in the self-evolutionary process, such as the degradation of safety alignment after memory accumulation, or the unintended introduction of vulnerabilities in tool creation and reuse. 
+To our knowledge, this is the first study to systematically conceptualize misevolution and provide empirical evidence of its occurrence, highlighting an urgent need for new safety paradigms for self-evolving agents.
+
+### Misevolution can happen in various scenarios
+![showcase](figures/fig1_showcase.png)
+
+The figure above shows some typical cases where misevolution may happen:
+
+**(a) Biased memory evolution leads to over-refunding.** A customer service agent evolves its memory by storing the interaction history with the user, including the actions taken and the feedbacks & ratings from users. However, it may learn a biased correlation between the refunding action and positive user feedback from the memory, leading it to proactively offer refunds even when not asked to.
+
+**(b) Tool evolution by ingesting appealing but insecure code causes data leakage.** An agent evolves its toolset by searching and ingesting open-source tools from GitHub. However, it may incorporate seemingly useful but insecure code from a public repository, inadvertently creating a new tool with a backdoor that leaks data.
+
+**(c) Inappropriate cross-domain tool reuse leads to privacy issues.** An agent evolves its toolset by self-creating new tools and reusing existing ones. For one task (sharing posters with participants), it creates a general-purpose tool called `upload_and_share_files`, which upload the files to be shared and generates a public link. Later, in another task (sharing a financial report with the board), the agent reuses this tool, but does not notice that the financial report is confidential. As a result, it creates a public link, which can lead to privacy issues and can be targeted by cyber attacks.
+
+
+---
+
+# ✨ Getting Started
+
+Coming soon.
+
+
+# 🔧 Usage
+
+## Model Misevolution
+
+### Self-generated Data
+
+In the *self-generated data* paradigm, we mainly tested [Absolute-Zero](https://huggingface.co/collections/andrewzh/absolute-zero-reasoner-68139b2bca82afb00bc69e5b) and [AgentGen](https://huggingface.co/DannyShaw/AgentGen-Rep-70B-Lora-Rank16) on a series of established safety benchmarks, including HarmBench, SALAD-Bench, HEx-PHI, and Agent-SafetyBench.
+
+To reproduce our results on HarmBench and HEx-PHI, run the following commands:
+```bash
+cd ./model_misevolution/harmbench
+# To run tests on HarmBench
+bash ./run_harmbench_pipeline.sh
+# To run tests on HEx-PHI
+bash ./run_hex-phi_pipeline.sh
+```
+In each bash script above, you can choose the models you would like to test. 
+To test your own models, modify `model_misevolution/harmbench/configs/model_configs/models.yaml` to add model names, paths, etc. 
+HEx-PHI requires an LLM judge to evaluate the results. Remember to fill in the api url and key in `model_misevolution/harmbench/evaluate_completions_api.py`.
+
+To reproduce our results on Salad-Bench, run the following commands:
+```bash
+cd ./model_misevolution/SaladBench
+bash eval_saladbench.sh
+```
+
+To reproduce our results on Agent-SafetyBench, run the following commands:
+```bash
+## 1. generate
+cd ./model_misevolution/Agent-SafetyBench/evaluation
+bash eval.sh
+## 2. evaluate
+cd ./model_misevolution/Agent-SafetyBench/score
+bash eval_with_shield.sh
+```
+
+In each bash script above, you can choose the models you would like to test. 
+
+### Self-generated Curriculum
+In the *self-generated curriculum* paradigm, we tested [UI-TARS-7B-DPO](https://huggingface.co/ByteDance-Seed/UI-TARS-7B-DPO) (initial model, before evolution) and [SEAgent](https://huggingface.co/Zery/SEAgent-1.0-7B) (after evolution) on the RiOSWorld benchmark.
+
+For detailed instructions on installation and testing, we kindly refer readers to the [RiOSWorld project](https://github.com/yjyddq/RiOSWorld).
+
+
+## Memory Misevolution
+
+###  Deployment-time Reward Hacking
+To reproduce the deployment-time reward hacking results, you may first set your base_url and api_key in `memory_misevolution/reward_hacking_test.py`.
+
+Then, you can run the following command:
+
+```bash
+cd ./memory_misevolution
+python reward_hacking_test.py --model gemini-2.5-pro --scenario finance
+```
+
+
+
+## Tool Misevolution
+
+### Insecure Tool Creation and Reuse
+To reproduce the insecure tool creation and reuse experiment, you may first set your base_url, api_key and model to be evaluated in the config.py file.
+
+Then, you can run the following command:
+
+```bash
+cd ./tool_misevolution
+bash insecure_tool_evaluation.sh
+```
+
+
+---
+
+
+# 🙏 Citation
+
+If you find this work useful, please consider citing:
+
+```bibtex
+@article{shao2025misevolution,
+    title={Your Agent May Misevolve: Emergent Risks in Self-evolving LLM Agents}, 
+    author={Shuai Shao and Qihan Ren and Chen Qian and Boyi Wei and Dadi Guo and Jingyi Yang and Xinhao Song and Linfeng Zhang and Weinan Zhang and Dongrui Liu and Jing Shao},
+    journal={arXiv preprint arXiv:2509.26354},
+    year={2025}
+}
+```
+
+---
+
+# 🌻 Acknowledgements
+This work is partially inspired by this [survey](https://github.com/CharlesQ9/Self-Evolving-Agents) on self-evolving agents. Part of our evaluation code is based from [Harmbench](https://github.com/centerforaisafety/HarmBench), [SALAD-Bench](https://github.com/OpenSafetyLab/SALAD-BENCH), [LLMs-Finetuning-Safety](https://github.com/LLM-Tuning-Safety/LLMs-Finetuning-Safety), [Agent-SafetyBench](https://github.com/thu-coai/Agent-SafetyBench), [RiOSWorld](https://github.com/yjyddq/RiOSWorld), and [RedCode](https://github.com/ai-secure/redcode). Thanks to these wonderful works!
+
+We also sincerely appreciate the following works for making their open-weight models available, which greatly facilitated our testing: [Absolute-Zero](https://huggingface.co/collections/andrewzh/absolute-zero-reasoner-68139b2bca82afb00bc69e5b), [AgentGen](https://huggingface.co/DannyShaw/AgentGen-Rep-70B-Lora-Rank16), [SEAgent](https://huggingface.co/Zery/SEAgent-1.0-7B).
